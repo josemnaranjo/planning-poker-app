@@ -1,9 +1,9 @@
 import { Socket, Server } from 'socket.io';
-import { updateRoom, getRoom, getRoomCodeBySocket } from '../roomManager.js';
-import { computeStats } from '../lib/statistics.js';
-import type { Round, ClosedRound } from '../types/index.js';
+import { updateRoom, getRoom, getRoomCodeBySocket } from '../roomManager';
+import { computeStats } from '../lib/statistics';
+import type { Round, ClosedRound } from '../types/index';
 import { v4 as uuidv4 } from 'uuid';
-import { sanitize } from './utils.js';
+import { sanitize } from './utils';
 
 export const registerRoundHandlers = (io: Server, socket: Socket): void => {
   socket.on('start-session', () => {

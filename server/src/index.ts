@@ -2,12 +2,12 @@ import express from 'express';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 import cors from 'cors';
-import { registerRoomHandlers } from './handlers/roomHandlers.js';
-import { registerDeckHandlers } from './handlers/deckHandlers.js';
-import { registerRoundHandlers } from './handlers/roundHandlers.js';
-import { removeParticipant } from './roomManager.js';
-import { sanitize } from './handlers/utils.js';
-import { getRoom } from './roomManager.js';
+import { registerRoomHandlers } from './handlers/roomHandlers';
+import { registerDeckHandlers } from './handlers/deckHandlers';
+import { registerRoundHandlers } from './handlers/roundHandlers';
+import { removeParticipant } from './roomManager';
+import { sanitize } from './handlers/utils';
+import { getRoom } from './roomManager';
 
 const PORT = process.env.PORT ?? 3001;
 const app = express();

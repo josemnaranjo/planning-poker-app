@@ -1,8 +1,8 @@
 import { Socket, Server } from 'socket.io';
-import { generateRoomCode } from '../lib/codeGenerator.js';
-import { createRoom, getRoom, updateRoom, registerSocket } from '../roomManager.js';
-import type { Participant } from '../types/index.js';
-import { sanitize } from './utils.js';
+import { generateRoomCode } from '../lib/codeGenerator';
+import { createRoom, getRoom, updateRoom, registerSocket } from '../roomManager';
+import type { Participant } from '../types/index';
+import { sanitize } from './utils';
 
 export const registerRoomHandlers = (io: Server, socket: Socket): void => {
   socket.on('create-room', ({ name }: { name: string }) => {

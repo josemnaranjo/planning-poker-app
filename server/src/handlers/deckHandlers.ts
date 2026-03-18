@@ -1,7 +1,7 @@
 import { Socket, Server } from 'socket.io';
-import { updateRoom, getRoomCodeBySocket } from '../roomManager.js';
-import type { Deck } from '../types/index.js';
-import { sanitize } from './utils.js';
+import { updateRoom, getRoomCodeBySocket } from '../roomManager';
+import type { Deck } from '../types/index';
+import { sanitize } from './utils';
 
 export const registerDeckHandlers = (io: Server, socket: Socket): void => {
   socket.on('set-deck', ({ deck }: { deck: Deck }) => {

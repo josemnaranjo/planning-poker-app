@@ -1,4 +1,4 @@
-import type { RoomState } from '../types/index.js';
+import type { RoomState } from '../types/index';
 
 export const sanitize = (room: RoomState): RoomState => {
   if (!room.currentRound || room.currentRound.phase !== 'voting') return room;

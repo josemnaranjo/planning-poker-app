@@ -1,4 +1,4 @@
-import type { RoomState, Participant } from './types/index.js';
+import type { RoomState, Participant } from './types/index';
 
 const rooms = new Map<string, RoomState>();
 // socketId -> roomCode

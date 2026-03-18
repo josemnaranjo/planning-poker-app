@@ -1,4 +1,4 @@
-import type { Vote, RoundStats } from '../types/index.js';
+import type { Vote, RoundStats } from '../types/index';
 
 const toNumbers = (votes: Vote[]): number[] =>
   votes
