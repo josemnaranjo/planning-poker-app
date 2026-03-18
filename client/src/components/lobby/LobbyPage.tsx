@@ -10,9 +10,7 @@ export const LobbyPage: React.FC = () => (
     </header>
     <div className="lobby-forms">
       <CreateRoomForm />
-      <div className="divider">
-        <span>o</span>
-      </div>
+      <div className="divider" />
       <JoinRoomForm />
     </div>
   </div>
